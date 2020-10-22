@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" >
+    <title>Matemática Financeira</title>
+</head>
+<body>
+    <span class="informacao desing-btn-aux"><i class="far fa-question-circle fa-3x"></i></span>
+    <a href="index.html"><span class="voltar desing-btn-aux"><i class="fas fa-undo-alt fa-3x"></i></span></a>
+    <div class="bg-page">
+    <!-- ========== MENU PRINCIPAL ========== -->
+    <div id="menu_principal">
+        <h2 class="titulo_menus" id="titulo_menus">Matemática Financeira</h2>
+        <button class="botoes" onclick="mostrar_calculos_juros_simples()">Juros Simples</button>
+        <button class="botoes" onclick="mostrar_calculos_juros_simples_TAXA()">Juros Simples (taxas)</button>
+        <button class="botoes" onclick="mostrar_calculos_juros_compostos()">Juros Compostos</button>
+        <button class="esconder" onclick="mostrar_calculos_CJM()">Calcular J, M e C</button>
+    </div>
+
+    <!-- ========== MENU CALCULO JUROS SIMPLES ========== -->
+    <div id="menu_calculos_juros_simples" class="esconder">
+        <h2 class="titulo_menus">Juros Simples</h2>
+        <button class="botoes" id="btn_juros" onclick="deley_calculo_juros_simples()">Calcular Juros</button>
+        <button class="botoes" id="btn_capital" onclick="deley_calculo_capital_simples()">Calcular Capital</button>
+        <button class="botoes" id="btn_taxa" onclick="deley_calculo_taxa_simples()">Calcular Taxa</button>
+        <button class="botoes" id="btn_periodo" onclick="deley_calculo_periodo_simples()">Calcular Período</button>
+        
+        <p id="visor_resultado" class="visor_resultado esconder"></p>
+        
+        <span id="iconeAuxiliar1_simples" class="icone-auxiliar esconder"></span><input id="input1_simples" class="inputs_variaveis esconder" type="number">
+        <span id="iconeAuxiliar2_simples" class="icone-auxiliar esconder"></span><input id="input2_simples" class="inputs_variaveis esconder" type="number">
+        <span id="iconeAuxiliar3_simples" class="icone-auxiliar esconder"></span><input id="input3_simples" class="inputs_variaveis esconder" type="number">
+
+        <button id="botaoCalcular" class="botao_resultado esconder">Calcular</button>
+    </div>
+    <!-- ========== MENU CALCULOS JUROS SIMPLES TAXA ========== -->
+    <div id="menu_calculos_juros_simples_TAXA" class="esconder">
+        <h2 class="titulo_menus">Juros Simples (Taxas)</h2>
+        <button class="botoes" id="btn_montante_taxa" onclick="deley_calculo_montante_taxa()">Calcular Montante</button>
+        <button class="botoes" id="btn_capital_taxa" onclick="deley_calculo_capital_taxa()">Calcular Capital</button>
+        <button class="botoes" id="btn_taxa_taxa" onclick="deley_calculo_taxa_taxa()">Calcular Taxa</button>
+        <button class="botoes" id="btn_periodo_taxa" onclick="deley_calculo_periodo_taxa()">Calcular Período</button>
+        
+        <p id="visor_resultado_taxa" class="visor_resultado esconder"></p>
+        
+        <span id="iconeAuxiliar1_taxa" class="icone-auxiliar esconder"></span><input id="input1_taxa" class="inputs_variaveis esconder" type="number">
+        <span id="iconeAuxiliar2_taxa" class="icone-auxiliar esconder"></span><input id="input2_taxa" class="inputs_variaveis esconder" type="number">
+        <span id="iconeAuxiliar3_taxa" class="icone-auxiliar esconder"></span><input id="input3_taxa" class="inputs_variaveis esconder" type="number">
+
+        <button id="botaoCalcular_taxa" class="botao_resultado esconder">Calcular</button>
+        
+
+    </div>
+    <!-- ========== MENU CALCULOS JUROS COMPOSTOS ========== -->
+    <div id="menu_calculos_juros_compostos" class="esconder">
+        <h2 class="titulo_menus">Juros Compostos</h2>
+        <button class="botoes" id="btn_montante_composto" onclick="deley_calculo_montante_composto()">Calcular Montante</button>
+        <button class="botoes" id="btn_capital_composto" onclick="deley_calculo_capital_composto()">Calcular Capital</button>
+        <button class="botoes" id="btn_capitalJuros_composto" onclick="deley_calculo_capitalJuros_composto()">Calcular Capital (Juros)</button>
+        <button class="botoes" id="btn_juros_composto" onclick="deley_calculo_juros_composto()">Calcular Juros</button>
+        <button class="botoes" id="btn_taxa_composto" onclick="deley_calculo_taxa_composto()">Calcular Taxa</button>
+        
+        <p id="visor_resultado_composto" class="visor_resultado esconder"></p>
+        
+        <span id="iconeAuxiliar1_composto" class="icone-auxiliar esconder"></span><input id="input1_composto" class="inputs_variaveis esconder" type="number">
+        <span id="iconeAuxiliar2_composto" class="icone-auxiliar esconder"></span><input id="input2_composto" class="inputs_variaveis esconder" type="number">
+        <span id="iconeAuxiliar3_composto" class="icone-auxiliar esconder"></span><input id="input3_composto" class="inputs_variaveis esconder" type="number">
+
+        <button id="botaoCalcular_composto" class="botao_resultado esconder">Calcular</button>
+
+
+    </div>
+    <!-- ========== MENU CALCULOS CJM ========== -->
+    <div id="menu_calculos_CJM" class="esconder">
+        <h2 class="titulo_menus">Calculos C, J e M</h2>
+    </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
