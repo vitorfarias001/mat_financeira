@@ -1,0 +1,1 @@
+Github-Pages static page
